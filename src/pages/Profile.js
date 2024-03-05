@@ -2,7 +2,7 @@ import React from 'react';
 
 const UserProfile = () => {
   return (
-    <div className="bg-gray-800 text-white font-sans min-h-screen flex items-center justify-center">
+    <div className="bg-primary text-white font-sans min-h-screen flex items-center justify-center">
       <div className="container mx-auto p-10 h-full">
         <div className="max-w-screen-lg mx-auto bg-gray-900 p-8 rounded-lg shadow-xl flex flex-col md:flex-row items-center h-full"> 
           <div className="md:w-1/3 md:pr-8 mb-4 md:mb-0"> 
