@@ -38,8 +38,24 @@ const UserProfile = () => {
                 <p className="text-white">175 cm</p>
               </div>
               <div> 
+                <p className="text-gray-400">Body Fat Percentage:</p>
+                <p className="text-white">15%</p>
+              </div>
+              <div> 
+                <p className="text-gray-400">Exercise Routine:</p>
+                <p className="text-white">3 times a week</p>
+              </div>
+              <div> 
+                <p className="text-gray-400">Fitness Goal:</p>
+                <p className="text-white">Build Muscle</p>
+              </div>
+              <div> 
                 <p className="text-gray-400">Active Status:</p>
                 <p className="text-green-500">Active</p>
+              </div>
+              <div> 
+                <p className="text-gray-400">Achivements</p>
+                <p className="text-white"></p>
               </div>
             </div>
           </div>
