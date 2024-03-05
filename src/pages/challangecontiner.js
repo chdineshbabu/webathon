@@ -1,4 +1,4 @@
-// ChallengeCardContainer.js
+
 import React, { useState, useEffect } from 'react';
 import ChallengeCard from './chalanges';
 import ChallengeCreationForm from './ChallengeCreationForm';
@@ -9,7 +9,6 @@ const ChallengeCardContainer = () => {
   const [showCreationForm, setShowCreationForm] = useState(false);
   const [challenges, setChallenges] = useState([]);
 
-  // Fetch challenges from Firestore
   const fetchChallenges = async () => {
     const challengesCollection = collection(firestore, 'challenges');
     const challengesSnapshot = await getDocs(challengesCollection);
@@ -19,18 +18,14 @@ const ChallengeCardContainer = () => {
 
   useEffect(() => {
     fetchChallenges();
-  }, []); // Run the fetchChallenges function once when the component mounts
-
+  }, []); 
   const handleStartChallenge = async (challenge) => {
-    // Add the selected challenge to Firestore
     const challengesCollection = collection(firestore, 'userChallenges');
     await addDoc(challengesCollection, challenge);
 
-    // Show the creation form
     setShowCreationForm(true);
   };
 
-  // Custom demo challenges
   const customDemoChallenges = [
     {
       id: 5,
@@ -56,17 +51,17 @@ const ChallengeCardContainer = () => {
       description: 'Strengthen and tone your body with a 21-day Pilates challenge.',
       imageUrl: 'https://www.realsimple.com/thmb/_8CzlhvKnREIbAYSNivKszibUcM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/5PilatesExercises_RS_PilatesExercises_3_GraceCanaan-9c84ffe2a76e41ba93ab003a3c2161ec.jpg',
     },
-    // Add more demo challenges as needed
+
   ];
 
   return (
-    <div className="flex flex-wrap justify-center gap-4 p-4 bg-gray-900">
+    <div className="flex flex-wrap justify-center gap-4 p-4 bg-primary">
       {challenges.map((challenge) => (
         <ChallengeCard
           key={challenge.id}
           title={challenge.title}
           description={challenge.description}
-          imageUrl={challenge.imageUrl}
+          imageUrl={challenge.img}
           onStartChallenge={() => handleStartChallenge(challenge)}
         />
       ))}

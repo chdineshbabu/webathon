@@ -10,13 +10,16 @@ function Detail() {
   return (
     <div className='bg-primary h-screen text-white pt-24'>
       <div className='flex justify-around'>
-        <Walking />
+      <div className='border-2 rounded-2xl border-slate-600  py-4 px-24 mb-10'>
+      <Walking />
+      </div>
+        
         <div className=''>
           <Cycling />
           <Water />
         </div>
       </div>
-      <div className='ml-8 flex gap-6'>    <Daily />
+      <div className='ml-16 flex gap-12'>    <Daily />
         <Goal />
         <Swim /></div>
 

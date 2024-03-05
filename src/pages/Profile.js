@@ -9,19 +9,19 @@ const UserProfile = () => {
             <img src={User} alt="Profile Picture" className="w-48 h-48 rounded-full mx-auto border-4 border-white" /> 
           </div>
           <div className="md:w-2/3 pl-0 md:pl-8"> 
-            <h2 className="text-3xl font-semibold mb-4">John Doe</h2>
+            <h2 className="text-3xl font-semibold mb-4">Dinesh</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="mb-4">
                 <p className="text-gray-400">Email:</p>
-                <p className="text-white">john.doe@example.com</p>
+                <p className="text-white">dinesh4128@gmail.com</p>
               </div>
               <div className="mb-4"> 
                 <p className="text-gray-400">Date of Birth:</p>
-                <p className="text-white">01/01/1990</p>
+                <p className="text-white">10/06/2004</p>
               </div>
               <div className="mb-4"> 
                 <p className="text-gray-400">Age:</p>
-                <p className="text-white">32</p>
+                <p className="text-white">19</p>
               </div>
               <div className="relative mb-4">
                 <p className="text-gray-400">Weight:</p>
@@ -55,7 +55,7 @@ const UserProfile = () => {
               </div>
               <div className="mb-4"> 
                 <p className="text-gray-400">Achievements:</p>
-                <p className="text-white"></p>
+                <p className="text-white">Runner</p>
               </div>
             </div>
           </div>

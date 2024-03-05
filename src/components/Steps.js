@@ -74,7 +74,7 @@ function Steps() {
   return (
     <div>
     <h1 className='text-2xl font-semibold text-center pb-2 text-slate-300 '>Daily Steps</h1>
-    <div style={{ width: '500px', height: '375px' }}>
+    <div style={{ width: '500px', height: '330px' }}>
       <canvas id="stepsChart" width="500" height="300"></canvas>
     </div>
     </div>
