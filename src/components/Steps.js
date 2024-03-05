@@ -72,8 +72,11 @@ function Steps() {
   }, []);
 
   return (
-    <div style={{ width: '370px', height: '400px' }}>
-      <canvas id="stepsChart" width="500" height="200"></canvas>
+    <div>
+    <h1 className='text-2xl font-semibold text-center pb-2 text-slate-300 '>Daily Steps</h1>
+    <div style={{ width: '500px', height: '375px' }}>
+      <canvas id="stepsChart" width="500" height="300"></canvas>
+    </div>
     </div>
   );
 }
