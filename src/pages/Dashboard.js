@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Profile from '../pages/Profile';
 import Detail from './Detail';
+import ChallengeCardContainer from './challangecontiner';
 
 function Dashboard() {
   const [activeTab, setActiveTab] = useState('dashboard');
@@ -90,7 +91,13 @@ function Dashboard() {
           </div>
         )}
 
-        {/* Add content for other tabs */}
+        
+        {activeTab === 'challenges' && (
+          <div>
+            <ChallengeCardContainer />
+          </div>
+        )}
+
       </div>
     </div>
   );
