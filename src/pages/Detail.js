@@ -7,8 +7,11 @@ function Detail() {
   return (
     <div className='bg-primary h-screen text-white'>
         <Walking />
+        <div>
         <Cycling />
         <Water />
+        </div>
+        
     </div>
   )
 }
