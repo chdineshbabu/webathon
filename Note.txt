@@ -1,0 +1,6 @@
+Colors :
+Primiry;- #082032
+secondary;- #2C394B
+buttons:- #FF4C29
+
+
