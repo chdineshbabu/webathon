@@ -1,5 +1,5 @@
 import React from 'react';
-import Cycle from '../asserts/bicycle.svg';
+import Cycle from '../asserts/walking.svg';
 
 function Daily() {
   // Sample data for distance traveled (in kilometers) and progress (in percentage)
