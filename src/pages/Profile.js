@@ -5,6 +5,9 @@ const UserProfile = () => {
     <div className="bg-gray-800 text-white font-sans min-h-screen flex items-center justify-center">
       <div className="container mx-auto p-12 h-full">
         <div className="max-w-screen-xl mx-auto bg-gray-900 p-12 rounded-lg shadow-xl flex flex-col md:flex-row items-center h-full"> 
+    <div className="bg-primary text-white font-sans min-h-screen flex items-center justify-center">
+      <div className="container mx-auto p-10 h-full">
+        <div className="max-w-screen-lg mx-auto bg-gray-900 p-8 rounded-lg shadow-xl flex flex-col md:flex-row items-center h-full"> 
           <div className="md:w-1/3 md:pr-8 mb-4 md:mb-0"> 
             <img src="avatar.jpg" alt="Profile Picture" className="w-48 h-48 rounded-full mx-auto border-4 border-white" /> 
           </div>

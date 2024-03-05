@@ -1,8 +1,11 @@
 import React from 'react'
+import StepsChart from './Steps'
 
 function Walking() {
   return (
-    <div>Walking</div>
+    <div>
+        <StepsChart />
+    </div>
   )
 }
 
